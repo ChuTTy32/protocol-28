@@ -8,10 +8,13 @@ Start: 2026-09-28. Goal: KAIST MS (embedded / digital design), flight Aug 2028.
 3. Нагрузка 10 ч/нед в sprint 1 (не 22). Воскресенье выключено. Каждая 6-я неделя: хвосты.
 4. Один шаг = один проверяемый результат (вывод в терминале, waveform, скрин).
 
-## Priority order при отставании (режем с конца)
-English > C / embedded > Verilog > math > Korean
+## Priority order при отставании (режем с конца, внутри 10ч core budget)
+English > C / embedded > Verilog
 
-## Часы в неделю (10)
+Math: 0 ч в sprint 1, начинается sprint 2.
+Korean: вне 10ч core budget — онлайн-курс, гибкий график, проходится в найденное время; не режется и не добавляется по adaptation rules, не считается в % выполнения sprint.
+
+## Часы в неделю (10, core budget)
 English 3 | C/embedded 3 | Verilog 3 | admin + план 1
 
 ## Sprint 1: 28.09 - 25.10
@@ -22,17 +25,20 @@ W1 (28.09-04.10)
 - [ ] English: 6 дней по 30 мин
 
 W2 (05.10-11.10)
-- [ ] nand2tetris part 1, проекты 1-2
-- [ ] C: программа под Cortex-M в QEMU печатает в UART
+- [ ] nand2tetris part 1, проект 1
+- [ ] C: blink встроенного GPIO под Cortex-M в QEMU (без UART — это отдельный шаг, не в этот спринт)
 - [ ] 10.10 (гейт): Nucleo-F411RE + кабель mini-USB, ничего больше
 
 W3 (12.10-18.10)
-- [ ] I2C: объяснить своими словами; ESP32 видит ATECC608 по адресу 0x60
-- [ ] Nucleo: светодиод по reference manual (если пришла)
+- [ ] nand2tetris part 1, проект 2
+- [ ] Nucleo: blink по reference manual, на реальном железе (если пришло)
+- [ ] HDLBits: продолжение по факту прогресса (Vectors/Modules)
 
 W4 (19.10-25.10)
 - [ ] 25.10 (гейт): логический анализатор + провода Dupont
 - [ ] ретро: что тормозило; собрать sprint 2
+
+Перенесено в sprint 2 (было перегружено в W2/W3): I2C + ATECC608 (0x60), C UART printf в QEMU.
 
 ## Horizon (статус: в силе / двигается по деньгам)
 - Загранпаспорт: двигается по деньгам
@@ -66,6 +72,7 @@ W4 (19.10-25.10)
 - Ben Eater, 8-bit breadboard computer
 - Harris & Harris, Digital Design and Computer Architecture: RISC-V Edition
 - C: K&R или K. N. King; позже Making Embedded Systems (E. White)
+- Cambridge, Essentials In Use (грамматика, по книге)
 
 ## Admin backlog
 - W1: письмо в деканат (условия посещаемости)
